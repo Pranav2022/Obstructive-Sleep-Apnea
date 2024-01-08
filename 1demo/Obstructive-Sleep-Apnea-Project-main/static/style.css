@@ -1,0 +1,71 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  .feature {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  

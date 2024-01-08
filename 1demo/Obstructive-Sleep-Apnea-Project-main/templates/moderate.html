@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSA PREDICTION</title>
+</head>
+<body>
+
+    <br><br><h2 style="color:rgb(0, 0, 0); font-weight:calc(1000); font-family: Tahoma" >{{ prediction_text }}</h2><br>
+    <h3>APNEA-HYPONEA-INDEX - 2</h3><br><br>
+    <img src="https://www1.racgp.org.au/getattachment/1046dd4b-5209-4ba3-b81d-cca8408c3ef3/attachment.aspx" class="center"><br><br>
+
+    <button><a href="https://docs.google.com/document/d/1CjntpPn8dejWyeKGxrqU0CXML3p6YQgRqRKHPzYgBQA/export?format=pdf" download>Download your report</a></button>
+
+    <p style="color:rgb(255,255,0) ; font-weight:calc(1000); font-family: sans-serif;font-size: xx-large;">" BE CAUTIOUS! GO TO DOCTOR"</p>
+      
+    <div class="feedback">
+    
+    <p style="color:rgb(19, 19, 18) ;font-weight:calc(1000);font-family:sans-serif;font-size: xx-large;">Please, Give your Feedback &#128073; <button><a href="{{url_for('feedbackform')}}">click me</a></button> </p>
+  </div>
+    <!-- <p><a href="{{ url_for('feedbackform') }}">click me</a></p>   -->
+    <!-- <p><a href="{{ url_for('static', filename='/pdfs/output1.pdf') }}" download="">Download pdf</a></p> -->
+    
+</body>
+</html>
+<style>
+   a{
+        list-style: none;
+        text-decoration: solid;
+    }
+
+    button{
+    background-color: #99ff01;
+    color: rgb(106, 174, 248);
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 13px;
+      
+        
+        
+    }
+    button:hover{
+        background-color:rgb(212, 228, 243);
+    }
+
+      body {
+        background-color: rgb(204, 0, 55);
+        text-align: center;
+        background-size: 1400px;
+        padding: 15px;
+      }
+    .center {
+        width: 100%;
+        max-width: 400px;
+        min-width: 10%;
+        height: auto;
+        border-radius: 13px;
+      }
+      h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: larger;
+        color: rgb(5, 253, 51);
+    }
+  
+</style>

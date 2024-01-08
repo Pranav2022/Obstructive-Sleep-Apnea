@@ -1,0 +1,211 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+    <body>
+<!-- Contact Us and Map -->
+
+    <section class="p-5 bg-dark text-light" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h1 class="display-4 text-center" id="about-tagline">Contact Us </h1>
+                    <p> </p>
+                    <h3><i class="bi bi-geo-alt" id="wehaveit"></i> J17, Popular Heights IV, Koregaon park,Pune,411001</h3>
+                    <br>
+
+                    <h3><i class="bi bi-telephone" id="wehaveit"></i> 8928421790</h3>
+                    <br>
+
+                    <h3><i class="bi bi-envelope" id="wehaveit"></i> mescoe3@gmail.com</h3>
+                    <br>
+                </div>
+                <div class="col-md">
+                    <div class="iframe-container">
+                        <iframe id="map"
+                            iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2423.7598195834476!2d73.88821684746146!3d18.541105682902298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c10289313b2b%3A0x2eaabc62c048f87c!2sPopular%20Heights%20IV%2C%20C%20Ln%2C%20Ragvilas%20Society%2C%20Koregaon%20Park%2C%20Pune%2C%20Maharashtra%20411001!5e0!3m2!1sen!2sin!4v1685365361602!5m2!1sen!2sin"
+                            width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                       Send Us a Message 
+                      </h5>
+                    </div>
+                    <div>
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        If you have any questions/comments or want to collaborate , please feel free to drop us a line using the form or any of the social 
+                        networks listed above. We will get back to you as soon as possible!
+                      </p>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+    <style>
+    #contact-us{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: #E7FF0D;
+    background: -webkit-linear-gradient(to right, #f5f5f5 0%, #FF4D17 25%, #0FFFDF 50%, #1CFF0C 100%);
+    background: -moz-linear-gradient(to right, #E7FF0D 0%, #FF4D17 25%, #0FFFDF 50%, #1CFF0C 100%);
+    background: linear-gradient(to right, #E7FF0D 0%, #FF4D17 25%, #0FFFDF 50%, #1CFF0C 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#contact{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-mf {
+  margin-top: 4rem;
+}
+
+.php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.php-email-form input, .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.php-email-form input:focus, .php-email-form textarea:focus {
+  border-color: #0078ff;
+}
+
+.php-email-form input {
+  padding: 10px 15px;
+}
+
+.php-email-form textarea {
+  padding: 12px 15px;
+  margin-bottom: 0;
+}
+
+.php-email-form button[type="submit"] {
+  background: #0078ff;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.php-email-form button[type="submit"]:hover {
+  background: #3393ff;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+    </style>
+    </body>

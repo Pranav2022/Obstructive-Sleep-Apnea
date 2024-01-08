@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSA PREDICTION</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    /* Your existing styles */
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Additional responsive styles and animations */
+
+    @media screen and (max-width: 1024px) {
+      .wk-mobile-6 {
+        width: 100%;
+      }
+
+      .intro h1,
+      .intro p,
+      .intro button {
+        font-size: 1.5em;
+      }
+
+      .Technology img {
+        height: 8rem;
+        width: 8rem;
+      }
+
+      .team-card {
+        width: 45%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-items {
+        margin-top: 10px;
+      }
+
+      .intro h1,
+      .intro p,
+      .intro button {
+        font-size: 1em;
+      }
+
+      .Technology img {
+        height: 6rem;
+        width: 6rem;
+      }
+
+      .team-card {
+        width: 100%;
+      }
+    }
+
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease-out;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header animate-fadeInUp">
+    <a href="{{ url_for('Home') }}" class="logo">Team DeBuggers</a>
+    <nav class="nav-items">
+      <a href="#">Home</a>
+      <a href="#about-me">About</a>
+      <a href="{{ url_for('Contacthtml') }}">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro animate-fadeInUp">
+      <h1>Welcome To Our Virtual Lab</h1>
+      <p>Discover amazing things with us.</p>
+      <button id="Jayesh"><a href="{{ url_for('learnmore') }}">Learn More</a></button>
+    </div>
+    <div class="heading animate-fadeInUp">
+      <h2>Technology Used</h2>
+    </div>
+    <hr class="animate-fadeInUp">
+
+    <div class="Technology animate-fadeInUp">
+      <div class="tech">
+        <div class="img1">
+          <img src="{{url_for('static',filename='/technology/html.jpeg')}}" alt="html">
+        </div>
+        <div class="img1">
+          <img src="{{url_for('static',filename='/technology/css.jpeg')}}" alt="css">
+        </div>
+        <div class="img1">
+          <img src="{{url_for('static',filename='/technology/bootstrap.jpeg')}}" alt="bootstrap">
+        </div>
+        <div class="img1">
+          <img src="{{url_for('static',filename='/technology/flask2.png')}}" alt="flask">
+        </div>
+        <div class="img1">
+          <img src="{{url_for('static',filename='/technology/vscode.png')}}" alt="vscode">
+        </div>
+      </div>
+    </div>
+    <div id="about-me" class="about-me-text animate-fadeInUp">
+      <h2>About Us</h2>
+      <p>Your introduction text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="team animate-fadeInUp">
+      <div class="responsive-container-block outer-container">
+        <div class="responsive-container-block inner-container">
+          <p class="text-blk section-head-text">
+            Meet Our Team
+          </p>
+          <div class="responsive-container-block">
+            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+              <div class="team-card animate-fadeInUp">
+                <div class="img-wrapper">
+                  <img class="team-img" src="{{url_for('static' , filename='/members/jayesh.jpg')}}">
+                </div>
+                <p class="text-blk name">
+                  Jayesh Khairnar
+                </p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank">
+                    <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+                  </a>
+                  <a href="http://www.facebook.com/" target="_blank">
+                    <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+                  </a>
+                  <a href="http://www.instagram.com/" target="_blank">
+                    <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+                  </a>
+                  <a href="http://www.gmail.com/" target="_blank">
+                    <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Add similar blocks for other team members -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer animate-fadeInUp">
+    <div class="copy">&copy; 2023 Design and Devloped by Team Debuggers</div>
+  </footer>
+</body>
+
+</html>

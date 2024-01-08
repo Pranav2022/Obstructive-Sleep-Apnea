@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSA PREDICTION</title>
+</head>
+
+<body>
+
+    
+
+    <div style="color: blue">
+        <form action="{{ url_for('predict')}}"  method="post">
+            <h1>!! PREDECTIVE ANALYSIS OF APNEA !!</h1>
+            <h3>BERLIN QUESTIONNAIRE (BQ)</h3>
+            <input id="first" name="BQ" type="number ">
+            <h3>EPWORTH SLEEPINESS SCALE (ESS)</h3><input id="second" name="ESS" required="required">
+            <h3>BODY MASS INDEX (BMI)</h3><input id="third" name="BMI" required="required">
+            <h3>WEIGHT</h3><input id="fourth" name="Weight" required="required">
+            <h3>HEIGHT</h3><input id="fifth" name="Height" required="required">
+            <h3>HEAD</h3><input id="sixth" name="Head" required="required">
+            <h3>NECK</h3><input id="seventh" name="Neck" required="required">
+            <h3>WAIST</h3><input id="eight" name="Waist" required="required">
+            <h3>BUTTOCK</h3><input id="nineth" name="Buttock" required="required">
+            <h3>AGE</h3><input id="tenth" name="Age" required="required">
+            <h3>GENDER(0-F & 1-M)</h3><input id="eleventh" name="M" required="required">
+            
+
+
+
+            <br><br><button id="sub" type="submit ">Condition Of Apnea</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}</h3><h3>
+    </h3></div>
+
+
+
+
+    <style>
+        body {
+            background-image: linear-gradient(180deg,#b7ff00, #00e0ff);
+            background-color: inherit;
+text-align: center;
+
+background-size: 1400px;
+        }
+
+
+
+        #box {
+            font-family: cursive;
+            /* font-weight: bolder; */
+            border-radius: 100px;
+            border-color: 45px;
+            border-style: solid;
+            font-family:  Georgia;
+            text-align: center;
+            background-color: rgb(97, 168, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 3%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 24px;
+        }
+        /* body{
+        background-image: url('./naak.JPG');
+        height: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; */
+
+
+
+        #sub {
+            width: 150px;
+            height: 60px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            font-weight: bolder;
+            font-family: cursive;
+        }
+
+        #sub:hover {
+            background-color: rgb(93, 139, 0);
+        }
+
+        #first {
+            font-weight: bold;
+            border-radius: 25px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+            background-color: c54ac05;
+            color: rgb(17, 16, 16);
+
+        }
+
+        #second {
+            font-weight: bold;
+            border-radius: 25px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+            background-color: c54ac05;
+            color: rgb(17, 16, 16);
+
+        }
+
+        #third {
+            font-weight: bold;
+            border-radius: 25px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+            background-color: c54ac05;
+            color: rgb(17, 16, 16);
+
+        }
+
+        #fifth {
+            font-weight: bold;
+            border-radius: 25px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+            background-color: c54ac05;
+            color: rgb(17, 16, 16);
+        }
+        #sixth {
+            font-weight: bold;
+            border-radius: 25px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+            background-color: c54ac05;
+            color: rgb(17, 16, 16);
+        }
+        #seventh {
+            font-weight: bold;
+            border-radius: 25px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+            background-color: c54ac05;
+            color: rgb(17, 16, 16);
+        }
+        #eight {
+            font-weight: bold;
+            border-radius: 25px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+            background-color: c54ac05;
+            color: rgb(17, 16, 16);
+        }
+        #fourth {
+            font-weight: bold;
+            border-radius: 25px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+            background-color: c54ac05;
+            color: rgb(17, 16, 16);
+        }
+        #nineth {
+            font-weight: bold;
+            border-radius: 25px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+            background-color: c54ac05;
+            color: rgb(17, 16, 16);
+        }
+        #tenth {
+            font-weight: bold;
+           border-radius: 25px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+            background-color: c54ac05;
+            color: rgb(17, 16, 16);
+        }
+        #eleventh {
+            font-weight: bold;
+            border-radius: 25px;
+            height: 25px;
+            font-size: 17px;
+            text-align: center;
+            background-color: c54ac05;
+            color: rgb(17, 16, 16);
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+
+
+
+</body></html>
